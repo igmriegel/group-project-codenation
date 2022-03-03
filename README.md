@@ -43,3 +43,13 @@ O algoritmo PAM é um algoritmo de agrupamento muito similar ao algoritmo K -Mea
 Continuando nossa análise dos algoritmos, enquanto no DBSCAN o número de clusters não precisa ser especificado, a definição de clusters no K-Means afeta diretamente os agrupamentos, ponto que também influenciou adotar este algoritmo em nossa abordagem, pois assim é possível evitar problemas com número de ruídos que podem ser gerados na nossa análise dos portfólios, pois uma análise com muitos ruídos poderia comprometer a nossa recomendação de leads para o cliente.
 
 Assim, foi possível perceber que o algoritmo que mais se encaixava em nossa abordagem de desenvolvimento do modelo foi o K-Means, pois atendeu muito bem o objetivo de encontrar similaridades entre os dados e agrupá-los conforme o número de clusters passado pelo argumento k. Este algoritmo utiliza um método simples e eficiente baseado no conceito de distância, e fornece uma classificação de informações de acordo com os próprios dados, baseada em análise e comparações entre os valores numéricos. Desta maneira, o algoritmo vai fornecer uma classificação automática sem a necessidade de nenhuma supervisão humana, ou seja, sem nenhuma pré-classificação existente. De forma iterativa, ele atribui os pontos de dados ao grupo que representa a menor distância, ou seja, ao grupo de dados que seja mais similar. O objetivo é encontrar um padrão e assumir que esse padrão é o que estamos tentando ensinar ao computador, que por sua vez, vai reproduzir e encontrar esse padrão sempre quando for solicitado. Depois de descoberto o padrão, qualquer item novo que tenha uma similaridade com aquele segmento (agrupamento – cluster) fará parte daquele grupo.
+
+### Referências
+- https://acervolima.com/diferenca-entre-k-means-e-dbscan-clustering/
+- https://medium.com/@gabriel.stankevix/segmenta%C3%A7%C3%A3o-em-r-kmeans-pam-clara-e-dbscan-37b47baf3922
+- https://medium.com/pizzadedados/kmeans-e-metodo-do-cotovelo-94ded9fdf3a9
+- https://medium.com/programadores-ajudando-programadores/k-means-o-que-%C3%A9-como-funciona-aplica%C3%A7%C3%B5es-e-exemplo-em-python-6021df6e2572
+- https://ichi.pro/pt/qual-e-a-diferenca-entre-k-vizinhos-mais-proximos-e-agrupamento-de-k-medias-36508279026525
+- https://aprenderdatascience.com/k-means-clustering-agrupamento-k-means/
+- https://www.alura.com.br/conteudo/clustering-dados-sem-classificacao
+- https://docero.com.br/doc/s8csvx8
